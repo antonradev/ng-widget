@@ -1,0 +1,17 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    font-family: 'Open Sans', sans-serif;
+}
+.app-container {
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 30px;
+}
+.project-description {
+    margin-bottom: 40px;
+    font-size: 13px;
+}

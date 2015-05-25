@@ -1,0 +1,58 @@
+.ng-widget {
+    border: 1px #f0f0f0 solid;
+    font-size: 90%;
+    .ng-widget-title-bar {
+        background-color: #f0f0f0;
+        line-height: 35px;
+        height: 35px;
+        padding-left: 8px;
+        font-weight: bold;
+        .hide-body {
+            float: right;
+            background-color: #dedede;
+            width: 35px;
+            text-align: center;
+            cursor: pointer;
+            color: #666;
+        }
+    }
+    .ng-widget-body {
+        &.hidden-widget {
+            display: none;
+        }
+        padding: 15px;
+        .main-area {
+            overflow: hidden;
+            .main-icon {
+                font-size: 200%;
+                float: left;
+                width: 15%;
+                text-align: center;
+                background-color: #f0f0f0;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .main-content {
+                float: right;
+                width: 82%;
+                .primary-row {
+                    background-color: #f0f0f0;
+                    line-height: 30px;
+                    height: 30px;
+                    padding-left: 10px;
+                }
+                .secondary-row {
+                    background-color: #f9f9f9;
+                    line-height: 30px;
+                    height: 30px;
+                    font-size: 90%;
+                    padding-left: 10px;
+                }
+            }
+        }
+        .bottom-icons {
+            margin-top: 10px;
+            text-align: right;
+        }
+    }
+}

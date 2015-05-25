@@ -1,0 +1,24 @@
+<div class="ng-widget">
+    <div class="ng-widget-title-bar">
+        {{ngWidgetTitle}}
+        <span class="hide-body" ng-click="toggleWidgetBody()">
+            <i class="fa fa-minus"></i>
+        </span>
+    </div>
+    <div class="ng-widget-body">
+        <div class="main-area">
+            <div class="main-icon">
+                <i class="fa fa-{{ngWidgetMainIcon}}"></i>
+            </div>
+            <div class="main-content">
+                <div class="primary-row">
+                    {{ngWidgetPrimaryContent}}
+                </div>
+                <div class="secondary-row">
+                    {{ngWidgetSecondaryContent}}
+                </div>
+            </div>
+        </div>
+        <div class="bottom-icons"></div>
+    </div>
+</div>
