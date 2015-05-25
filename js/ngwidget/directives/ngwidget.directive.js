@@ -3,7 +3,7 @@
 
     'use strict';
 
-    angular.module('ngwidget', []).directive('theNgWidget', ['$compile',
+    angular.module('ngwidget', []).directive('ngWidget', ['$compile',
         function ($compile) {
 
             var _link = function (scope, element, attr) {

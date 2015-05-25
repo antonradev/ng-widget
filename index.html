@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>NGWidget</title>
+        <title>NGWidget - NG-Widget is an AngularJS project with an isolated module</title>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href="js/ngwidget/styles/ng-widget.css" type="text/css" rel="stylesheet" media="all">
@@ -9,40 +9,62 @@
     </head>
     <body>
 
-        <div class="app-container" ng-app="myApp">
-            
+        <div class="app-container">
+
             <div class="project-description">
                 NG-Widget is an AngularJS project with an isolated module that can be integrated inside other AngularJS application and used by configuring its own
                 directive and using proper data.
+                <br><br>
+                Github: <a href="https://github.com/antonradev/ng-widget" target="_blank" rel="nofollow">https://github.com/antonradev/ng-widget</a>
                 <br>
                 Author: <a href="http://antonradev.com" target="_blank">Anton Radev</a>
             </div>
+            <h4>Demo</h4>
+            <div ng-app="myApp">
+                <div ng-controller="widgetDataController">
 
-            <div ng-controller="widgetDataController">
+                    <div ng-repeat="widget in widgetsData">
 
-                <div ng-repeat="widget in widgetsData">
-            
-                    <the-ng-widget
-                        ng-widget-title="{{widget.widgetTitle}}"
-                        ng-widget-primary-content="{{widget.primaryData}}"
-                        ng-widget-secondary-content="{{widget.secondaryData}}"
-                        ng-widget-main-icon="{{widget.mainIcon}}"
-                        ng-widget-main-icon-color="{{widget.mainIconColor}}"
-                        ng-widget-main-icon-background-color="{{widget.mainIconBackgroundColor}}"
-                        ng-widget-small-icon="{{widget.smallIcon}}"
-                        ng-widget-small-icons-color="{{widget.smallIconColor}}"
-                        ng-widget-small-icons-number="{{widget.smallIconsNumber}}"
-                        ></the-ng-widget>
-                    <br>
+                        <ng-widget
+                            ng-widget-title="{{widget.widgetTitle}}"
+                            ng-widget-primary-content="{{widget.primaryData}}"
+                            ng-widget-secondary-content="{{widget.secondaryData}}"
+                            ng-widget-main-icon="{{widget.mainIcon}}"
+                            ng-widget-main-icon-color="{{widget.mainIconColor}}"
+                            ng-widget-main-icon-background-color="{{widget.mainIconBackgroundColor}}"
+                            ng-widget-small-icon="{{widget.smallIcon}}"
+                            ng-widget-small-icons-color="{{widget.smallIconColor}}"
+                            ng-widget-small-icons-number="{{widget.smallIconsNumber}}"
+                            ></ng-widget>
+                        <br>
+                    </div>
+
                 </div>
-
             </div>
             
+            <div class="source-usage">
+                <h4>Using the NGWidget directive</h4>
+                <pre>
+&lt;ng-widget
+    ng-widget-title="{{widget.widgetTitle}}"
+    ng-widget-primary-content="{{widget.primaryData}}"
+    ng-widget-secondary-content="{{widget.secondaryData}}"
+    ng-widget-main-icon="{{widget.mainIcon}}"
+    ng-widget-main-icon-color="{{widget.mainIconColor}}"
+    ng-widget-main-icon-background-color="{{widget.mainIconBackgroundColor}}"
+    ng-widget-small-icon="{{widget.smallIcon}}"
+    ng-widget-small-icons-color="{{widget.smallIconColor}}"
+    ng-widget-small-icons-number="{{widget.smallIconsNumber}}"
+    &gt;
+&lt;/ng-widget&gt;
+                    </pre>
+                </div>
+
             <div style="margin: 40px 0 10px 0; font-size: 13px">
                 <a href="http://uxpd.net" target="_blank">uxpd.net</a> 
                 | <a href="http://jui.uxpd.net/" target="_blank">jui.uxpd.net</a>
             </div>
-            
+
         </div>
 
         <script src="js/angular.min.js" type="text/javascript"></script>
