@@ -7,6 +7,6 @@ Demo:
 http://angularjs.uxpd.net/ngwidget/
 
 ##
-MyDoes elements are used in the UI development of https://bvop.org
+Ng Widget elements are used in the UI development of https://bvop.org
 Thanks for supporting,
 The creator
